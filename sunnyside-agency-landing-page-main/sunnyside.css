@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#container{
+  width: 100%;
+  height: 90vh;
+  background-image: url(images/desktop/image-header.jpg);
+  background-position: bottom;
+  background-size:cover;
+  /* background-repeat:no-repeat; */
+}
+header{
+  display: flex;
+  align-items: center;
+}
+header div{
+  width: 50%;
+  margin-top: 20px;
+}
+header div img{
+  margin-left: 20px;
+}
+header div a{
+  text-decoration: none;
+  margin: 10px;
+  color: hsl(0, 0%, 100%);
+}
+header #headerLink{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+  align-items: center;
+}
+header div .contact{
+  padding: 7px 15px;
+  background: white;
+  color: black;
+  border-radius: 50px;
+}
+#container h1{
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  margin-top: 50px;
+  word-spacing: 20px;
+  font-weight: bold;
+}
+#container .icon-arrow-down{
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.container > div{
+  width: 50%;
+  height: 70vh;
+  /* background: black; */
+  /* margin: 10px; */
+}
+.container #egg{
+  background-image: url(images/desktop/image-transform.jpg);
+}
+.container div{
+  background-position: center;
+  background-size: cover;
+}
+.container #bottle{
+  background-image: url(images/desktop/image-stand-out.jpg);
+}
+.container #graphic{
+  background-image: url(images/desktop/image-graphic-design.jpg);
+}
+.container #photographers{
+  background-image: url(images/desktop/image-photography.jpg);
+}
+.container div div{
+  width: 50%;
+  margin-left: 30%;
+}
+.container div div h2{
+  margin-top: 20%;
+  width: 45%;
+  font-size: 25px;
+  font-weight: bold;
+}
+.container div div p{
+  width: 90%;
+  margin-top: 30px;
+  line-height: 25px;
+  color: hsl(198, 62%, 26%);
+  font-weight: bold;
+}
+.container div div section{
+  margin-top: 20px;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  font-size: 20px;
+  font-weight: bold;
+}
+#graphic div, #photographers div{
+  margin-top: 50%;
+  text-align: center;
+}
+#sub-container{
+  padding-bottom: 30px;
+}
+#sub-container h1{
+  text-align: center;
+  margin-top: 5%;
+  color: hsl(210, 4%, 67%);
+}
+.sub-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.sub-container div{
+  width: 30%;
+  margin: 10px;
+  padding-bottom: 10px;
+}
+.sub-container div img{
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+  margin-bottom: 30px;
+}
+.sub-container div p{
+  margin-left: 20%;
+  width: 60%;
+  text-align: center;
+  line-height: 22px;
+  color: hsl(198, 62%, 26%);
+}
+.sub-container div section{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+#content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#content div{
+  width: 25%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+}
+#milk{
+  background-image: url(images/desktop/image-gallery-milkbottles.jpg);
+}
+#orange{
+  background-image: url(images/desktop/image-gallery-orange.jpg);
+}
+#cone{
+  background-image: url(images/desktop/image-gallery-cone.jpg);
+}
+#sugar{
+  background-image: url(images/desktop/image-gallery-sugarcubes.jpg);
+}
+footer{
+  width: 100%;
+  height: 30vh;
+  background: hsl(168, 34%, 41%);
+}
+#footer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+
+}
+#footer div{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+#footer div a{
+  text-decoration: none;
+  color: hsl(198, 62%, 26%);
+  margin: 10px;
+}
+#footer div img{
+  margin: 15px;
+}
+#icon-hamburger{
+  display: none;
+  cursor: pointer;
+}
+#mobile{
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  margin-top: 30px;
+  display: none;
+}
+#mobile div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  background: white;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+#mobile div a{
+  margin: 20px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact1{
+  padding: 15px 25px;
+  background: yellow;
+  border-radius: 30px;
+}
+@media screen and (max-width: 650px){
+  header div a{
+    display: none;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .container > div{
+    width: 100%;
+  }
+  .container div div{
+    width: 80%;
+    margin: 0;
+  }
+  .container div div h2{
+    text-align: center;
+    width: 70%;
+    margin-left: 25%;
+  }
+  .container div div p{
+    width: 100%;
+    text-align: center;
+    margin-left: 10%;
+  }
+  .container div div section{
+    text-align: center;
+  }
+  .sub-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .sub-container > div{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #content div{
+    width: 50%;
+  }
+  #icon-hamburger{
+    display: block;
+  }
+}
